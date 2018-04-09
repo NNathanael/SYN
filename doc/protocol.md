@@ -4,7 +4,7 @@
 
 ```json
 {
-    nameRestaurant : String
+    name : String
     orders : [{
     			table : String
     			foods : [String]

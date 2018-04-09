@@ -3,9 +3,15 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 // create a schema
-var foodSchema = new Schema({
-  tag: { type: String, required: true},
-  name: String
+var restaurantSchema = new Schema({
+  name: { type: String, required: true},
+  orders: [
+    {
+      table: Number,
+      foods: [{ tag: { type: String, required: true}, name: { type: String, required: true} }]
+    }
+  ]
+ 
   /*,
   username: { type: String, required: true, unique: true },
   password: { type: String, required: true },
@@ -22,7 +28,7 @@ var foodSchema = new Schema({
 
 // the schema is useless so far
 // we need to create a model using it
-var Food = mongoose.model('Food', foodSchema);
+var Food = mongoose.model('restaurant', restaurantSchema);
 
 // make this available to our users in our Node applications
 module.exports = Food;
