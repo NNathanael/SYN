@@ -22,13 +22,20 @@ var Restaurant = require('./../models/restaurant/restaurantSchema');
 // });
 
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
+/* GET restaurant list. */
+router.get('/:name', function(req, res, next) {
 	mongoose.connect('mongodb://localhost/restaurant', function (err) {
-		if (err) throw err;
-		//res.send('Successfully connected');
+	if (err) throw err;
+	var nameResto = req.params.name;
+	console.log(nameResto);
+	//res.send('Successfully connected');
+	Restaurant.find({}, function(err, resto) {
+  if (err) throw err;
+  // object of the user
+  res.send("Liste des restos");
+	});
+
 		
-		res.send('Les restaurents');
 	// restaurant2.save(function(err) {
 	// 	if (err) throw err;
 	// 	console.log('restaurant2 saved successfully!');
