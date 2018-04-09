@@ -23,16 +23,15 @@ var Restaurant = require('./../models/restaurant/restaurantSchema');
 
 
 /* GET restaurant list. */
-router.get('/:name', function(req, res, next) {
+router.get('/', function(req, res, next) {
 	mongoose.connect('mongodb://localhost/restaurant', function (err) {
 	if (err) throw err;
-	var nameResto = req.params.name;
-	console.log(nameResto);
 	//res.send('Successfully connected');
-	Restaurant.find({}, function(err, resto) {
-  if (err) throw err;
-  // object of the user
-  res.send("Liste des restos");
+	Restaurant.find({},{name:1}, function(err, resto) {
+  	if (err) throw err;
+  	// object of the user
+
+  	res.send(JSON.stringify(resto));
 	});
 
 		

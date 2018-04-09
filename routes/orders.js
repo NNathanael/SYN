@@ -15,7 +15,7 @@ router.get('/:name', function(req, res, next) {
   if (err) throw err;
   // object of the user
   res.send(
-  	JSON.stringify(resto[0]));
+  	JSON.stringify(resto[0].orders));
   });
 });
 	
