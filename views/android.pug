@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  script('src=/socket.io/socket.io.js') 
+  include navbar.pug
+  h1= "Connexion d'utilisateurs communistes"
+  button(id='btn_send' type='button' class='btn btn-primary') Send order
+  script
+    include ../public/javascripts/client_android.js

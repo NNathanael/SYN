@@ -5,17 +5,15 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var restoRouter = require('./routes/restaurants');
-var ordersRouter = require('./routes/orders');
-
 var app = express();
-
 // Socket.io
 var io = socket_io();
 app.io = io;
+
+var indexRouter = require('./routes/index');
+var ordersRouter = require('./routes/orders');
+var androidRouter = require('./routes/android');
+var protocol = require('./socket/protocol.js')(io);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -28,9 +26,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/restaurants', restoRouter);
 app.use('/orders', ordersRouter);
+app.use('/android', androidRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -47,15 +44,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-
-
-
-// socket.io events
-io.on( "connection", function( socket )
-{
-    console.log( "A user connected" );
-});
-
 
 module.exports = app;
