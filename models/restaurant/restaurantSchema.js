@@ -11,19 +11,6 @@ var restaurantSchema = new Schema({
       foods: [{ tag: { type: String, required: true}, name: { type: String, required: true} }]
     }
   ]
- 
-  /*,
-  username: { type: String, required: true, unique: true },
-  password: { type: String, required: true },
-  admin: Boolean,
-  location: String,
-  meta: {
-    age: Number,
-    website: String
-  },
-  created_at: Date,
-  updated_at: Date
-  */
 });
 
 // the schema is useless so far
