@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  include navbar.pug
+
+  h1= restaurant.name
+  p Welcome to #{restaurant.name}
+
+  div(class="row")
+    each order in restaurant.orders
+      div(class="col col-xs-12 col-sm-6 col-md-3")
+        div(class="card")
+          div(class="card-header")= "Table n°" + order.table
+          div(class="card-body")
+            h5(class="card-title") Repas
+            each food in order.foods
+              h6(class="card-subtitle mb-2 text-muted")= food.name
