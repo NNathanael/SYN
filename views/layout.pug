@@ -5,25 +5,6 @@ html
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    script.
-      $(document).ready(function(){
-      $.ajax({url: "demo_test.txt", success: function(result){
-      - var restaurant = result
-      - var data=
-        div(class="row")
-          each order in restaurant.orders
-            div(class="col col-xs-12 col-sm-6 col-md-3")
-              div(class="card")
-                div(class="card-header")= "Table n°" + order.table
-                div(class="card-body")
-                  h5(class="card-title") Repas
-                  each food in order.foods
-                    h6(class="card-subtitle mb-2 text-muted")= food
-
-
-      $("#div1").html(result);
-      }});
-      });
 
   body
     block content

@@ -1,3 +1,10 @@
+# Loic plus jamais tu casses mes dependences
+package.json
+package-lock.json
+
+# poubelle
+.vs 
+
 # Logs
 logs
 *.log

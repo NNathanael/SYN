@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  include navbar.pug
+
+  h1= "Liste des restaurants"
+
+  div(class="row")
+    each restaurant in restaurants
+      div(class="col col-xs-12 col-sm-6 col-md-3")
+        div(class="card")
+          div(class="card-header")=  restaurant.name
+          div(class="card-body")
+            h5(class="card-title") Lien du restaurant
+              a(class="card-subtitle mb-2 text-muted", href="http://localhost:3000/orders/"+restaurant.name)= restaurant.name
