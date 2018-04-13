@@ -1,5 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
+var socket_io    = require('socket.io');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
@@ -11,6 +12,10 @@ var restoRouter = require('./routes/restaurants');
 var ordersRouter = require('./routes/orders');
 
 var app = express();
+
+// Socket.io
+var io = socket_io();
+app.io = io;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -42,5 +47,15 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
+
+
+// socket.io events
+io.on( "connection", function( socket )
+{
+    console.log( "A user connected" );
+});
+
 
 module.exports = app;
