@@ -8,10 +8,16 @@ block content
 
   div(class="row")
     each order in restaurant.orders
+      div 
+      code.formattedDebug= order
+      code.formattedDebug= (order.createAt)
       div(class="col col-xs-12 col-sm-6 col-md-3")
         div(class="card")
           div(class="card-header")= "Table n°" + order.table
           div(class="card-body")
             h5(class="card-title") Repas
+            -var date = new Date(order.createAt);
+            h5(class="card-title")= date
             each food in order.foods
-              h6(class="card-subtitle mb-2 text-muted")= food.name
+              h6(class="card-subtitle mb-2 text-muted")= food
+              h6(class="card-subtitle mb-2 text-muted")= JSON.stringify(food)
