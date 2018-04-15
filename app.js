@@ -4,8 +4,13 @@ var socket_io    = require('socket.io');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mongoose = require('mongoose');
 
 var app = express();
+
+var url = 'mongodb://localhost/restaurant';
+mongoose.connect(url);
+
 // Socket.io
 var io = socket_io();
 app.io = io;
