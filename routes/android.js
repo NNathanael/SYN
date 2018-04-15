@@ -7,4 +7,18 @@ router.get('/', function(req, res, next) {
 	res.render('android');
 });
 
+router.get('/:id', function(req, res, next) {
+	 
+	 	var idResto = req.params.id;
+	 	Restaurant.findOne({_id:idResto},function(err,resto) {
+	 		if (err) throw err;
+	 		const data = {
+	 			name : resto.name,
+	 			tables : resto.tables,
+	 			ingredients : resto.ingredients
+	 		};
+	 		res.send(data);
+	 	});
+});
+
 module.exports = router;

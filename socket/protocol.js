@@ -52,7 +52,6 @@ module.exports = function(io) {
       });      
       socket.emit('ORDER_CONFIRM', { status: true });
     });
-
   });
   return router;
 }

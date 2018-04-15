@@ -42,6 +42,20 @@ Route : ***orders/:idRestaurant***
 }
 ```
 
+### Page android
+
+Route : ***android/:idRestaurant***
+
+```json
+{
+    name,
+    tables : [{ _id, name}],
+    ingredients : [{ _id, name, qte}]
+}
+```
+
+
+
 ## MESSAGES
 
 #### ORDER
