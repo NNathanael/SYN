@@ -8,16 +8,22 @@ block content
 
   div(class="row")
     each order in restaurant.orders
-      div 
-      code.formattedDebug= order
-      code.formattedDebug= (order.createAt)
+     unless order.finish
+      -var date = new Date(order.createAt)
+      -var dateNow = new Date()
+      -var diff = dateNow - date
+      -diff = (diff / (1000 * 60)) 
       div(class="col col-xs-12 col-sm-6 col-md-3")
         div(class="card")
           div(class="card-header")= "Table n°" + order.table
+          if diff > 30
+           div(class="alert alert-danger" role="alert") Cette commande est présente depuis plus de 30 minutes !
           div(class="card-body")
-            h5(class="card-title") Repas
-            -var date = new Date(order.createAt);
-            h5(class="card-title")= date
+            h6(class="card-subtitle mb-2 text-muted")= date.getHours() + ":" +date.getMinutes() + ":" +date.getSeconds() + " le " + date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear()
             each food in order.foods
-              h6(class="card-subtitle mb-2 text-muted")= food
-              h6(class="card-subtitle mb-2 text-muted")= JSON.stringify(food)
+              p(class="card-text")= food
+            div(class="container")
+             form(name="getomdb" method='post')
+              input(type="hidden" name="idOrder" id="idOrder" value=order._id)
+              input(class="btn btn-danger float-right" id="delete" type="submit",name="delete" value="Delete Order")
+              input(class="btn btn-success" id="complete" type="submit" name="complete" value="Complete Order")

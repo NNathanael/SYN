@@ -10,6 +10,7 @@ var restaurantSchema = new Schema({
   orders: [ {
   	createAt : { type: Date, default: Date.now() },
     table: String,
+    finish: Boolean,
     foods: []
   } ]
 });
