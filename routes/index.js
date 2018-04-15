@@ -29,11 +29,13 @@ router.get('/insert', function(req, res, next) {
 		orders: [
 		{
 			table : '1',
-			foods : [ 'Jambon', 'Fromage', 'Oeuf' ]
+			foods : [ 'Jambon', 'Fromage', 'Oeuf' ],
+			finish : false
 		},
 		{
 			table : '4',
-			foods : [ 'Champignon', 'Noix', 'Fromage' ]
+			foods : [ 'Champignon', 'Noix', 'Fromage' ],
+			finish : false
 		}
 
 		]
@@ -51,15 +53,18 @@ router.get('/insert', function(req, res, next) {
 		orders: [
 		{
 			table : '1',
-			foods : [ 'Nutella' ]
+			foods : [ 'Nutella' ],
+			finish : false
 		},
 		{
 			table : '2',
-			foods : [ 'Confiture' ]
+			foods : [ 'Confiture' ],
+			finish : false
 		},
 		{
 			table : '3',
-			foods : [ 'Jambon', 'Fromage' ]
+			foods : [ 'Jambon', 'Fromage' ],
+			finish : false
 		}
 		]
 	});
