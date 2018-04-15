@@ -6,15 +6,15 @@
 
 ```json
 {
-    idRestaurant,
+    _id,
     name,
-    tables : [{ idTable, name}],
-    ingredients : [{ idIngredient, name, qte}],
-	orders : [
-        idOrder,
-        table : { idTable, name},
-        foods : [{idIngredient,name}]
-    ]
+    tables : [{ _id, name}],
+    ingredients : [{ _id, name, qte}],
+	orders : [{
+        _id,
+        table,
+        foods : [ name ]
+	}]
 }
 ```
 
@@ -26,9 +26,9 @@ Route : ***/***
 [{
 	name, 
 	orders : [
-	    idOrder,
-        table : { idTable, name},
-        foods : [{idIngredient,name}]]
+	    _id,
+        table,
+        foods : [ name ]
 }]
 ```
 
@@ -38,12 +38,12 @@ Route : ***orders/:idRestaurant***
 
 ``` json
 {
-    idRestaurant,
+    _id,
     name,
     orders : [
-        idOrder,
-        table : { idTable, name},
-        foods : [{idIngredient,name}]]
+        _id,
+        table,
+        foods : [ name ]
 }
 ```
 
