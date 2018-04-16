@@ -4,11 +4,11 @@
 
 Pour utiliser l’application il faut tout d’abord se procurer fichier «. apk » qui permettra de l’installer sur votre Smartphone.
 
-Depuis cette application vous pouvez ensuite, scanner les différents Tags RFID. Pour scanner un Tag, approchez votre téléphone de celui-ci et l’application fera le reste.
+Depuis cette application vous pouvez ensuite, scanner les différents Tags NFC. Pour scanner un Tag, approchez votre téléphone de celui-ci et l’application fera le reste.
 
 Ces Tags vont ajouter à votre commande les ingrédients que vous voulez ajouter à votre repas.
 
-Ensuite installez vous à une table et scanner le Tag RFID de celle-ci. Il ne vous reste plus qu’à envoyer la commande, elle sera reçue par le restaurateur qui pourra s’empresser de la préparer.
+Ensuite installez vous à une table et scanner le Tag NFC de celle-ci. Il ne vous reste plus qu’à envoyer la commande, elle sera reçue par le restaurateur qui pourra s’empresser de la préparer.
 
 ## Site web
 
