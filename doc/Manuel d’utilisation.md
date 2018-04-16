@@ -12,11 +12,11 @@ Ensuite installez vous à une table et scanner le Tag RFID decelle-ci. Il ne vou
 
 ## Site web
 
-En allant sur le site <https://katyusha.eracnos.ch/>vous aurez accès à la liste des restaurants inscrits. ![img](file:///C:/Users/L/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+En allant sur le site <https://katyusha.eracnos.ch/>vous aurez accès à la liste des restaurants inscrits. ![img](file:///listRest.png)
 
 En tant que restaurateur vous aurez votre page dédiée à voscommandes. Il faut vous rendre sur le site <https://katyusha.eracnos.ch/orders/le_nom_de_votre_restaurant>,ou cliquer depuis la page d’accueil sur votre restaurant.
 
-![img](file:///C:/Users/L/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)
+![img](file:///listOrder.png)
 
 Depuis cette page vous pouvez voir les commandes en cours etdepuis quand elles ont été envoyées. 
 
