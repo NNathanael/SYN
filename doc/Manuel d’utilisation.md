@@ -4,7 +4,7 @@
 
 Pour utiliser l’application il faut tout d’abord se procurer fichier «. apk » qui permettra de l’installer sur votre Smartphone.
 
-Depuis cette application vous pouvez ensuite, scanner lesdifférents Tags RFID. Pour scanner un Tag, approchez votre téléphone de celui-ci et l’application fera le reste.
+Depuis cette application vous pouvez ensuite, scanner les différents Tags RFID. Pour scanner un Tag, approchez votre téléphone de celui-ci et l’application fera le reste.
 
 Ces Tags vont ajouter à votre commande les ingrédients que vous voulez ajouter à votre repas.
 
