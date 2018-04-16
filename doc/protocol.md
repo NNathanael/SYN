@@ -4,7 +4,7 @@
 
 #### Restaurants
 
-```json
+```ini
 {
     _id,
     name,
@@ -31,7 +31,7 @@ Route : ***/***
 
 Route : ***orders/:idRestaurant***
 
-``` json
+``` ini
 {
     _id,
     name,
@@ -60,7 +60,7 @@ Route : ***android/:idRestaurant***
 
 #### ORDER
 
-```json
+```ini
 {
     idRestaurant,
     idTable,
@@ -70,7 +70,7 @@ Route : ***android/:idRestaurant***
 
 #### ORDER_CONFIRM
 
-```json
+```ini
 {
     status : boolean,
     error : string
