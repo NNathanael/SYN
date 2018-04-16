@@ -46,7 +46,7 @@ Route : ***orders/:idRestaurant***
 
 Route : ***android/:idRestaurant***
 
-```json
+```ini
 {
     name,
     tables : [{ _id, name}],
