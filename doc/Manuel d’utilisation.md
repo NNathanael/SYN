@@ -12,14 +12,14 @@ Ensuite installez vous à une table et scanner le Tag RFID decelle-ci. Il ne vou
 
 ## Site web
 
-En allant sur le site <https://katyusha.eracnos.ch/>vous aurez accès à la liste des restaurants inscrits. ![img](file:///listRest.png)
+En allant sur le site <https://katyusha.eracnos.ch/>vous aurez accès à la liste des restaurants inscrits. ![img](https://github.com/NNathanael/SYN/blob/master/doc/listRest.PNG)
 
 En tant que restaurateur vous aurez votre page dédiée à voscommandes. Il faut vous rendre sur le site <https://katyusha.eracnos.ch/orders/le_nom_de_votre_restaurant>,ou cliquer depuis la page d’accueil sur votre restaurant.
 
-![img](file:///listOrder.png)
+![img](https://github.com/NNathanael/SYN/blob/master/doc/listOrder.PNG)
 
 Depuis cette page vous pouvez voir les commandes en cours etdepuis quand elles ont été envoyées. 
 
 Vous avez les informations suivantes : la table où setrouve le client, la date d’envoi de la commande et les ingrédients qu’ildésire avoir dans son repas.
 
-Une alerte vous préviendra si une commande est présentedepuis plus de 30 minutes. Une fois que vous avez livré la commande d’unclient, vous cliquez sur « Complete Order » et la commande sera terminée.
+Une alerte vous préviendra si une commande est présente depuis plus de 30 minutes. Une fois que vous avez livré la commande d’unclient, vous cliquez sur « Complete Order » et la commande sera terminée.
