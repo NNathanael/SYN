@@ -1,4 +1,4 @@
- const socket = io.connect('http://localhost:3000');
+ const socket = io.connect('https://katyusha.eracnos.ch/');
 //5ad36fea8bccbc1f3a1e3dd9:food:5ad36fea8bccbc1f3a1e3de4
  const my_order = { 
  	idRestaurant : '5ad36fea8bccbc1f3a1e3dd9', // Brasserie de Montbenon

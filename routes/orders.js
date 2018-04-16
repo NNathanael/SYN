@@ -30,8 +30,6 @@ router.route('/:name')
              if (err) throw err;
         });
         }
-
-        
 });
 
 module.exports = router;

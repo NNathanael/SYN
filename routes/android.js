@@ -15,7 +15,8 @@ router.get('/:id', function(req, res, next) {
 	 		const data = {
 	 			name : resto.name,
 	 			tables : resto.tables,
-	 			ingredients : resto.ingredients
+	 			ingredients : resto.ingredients,
+	 			finish : false
 	 		};
 	 		res.send(data);
 	 	});
