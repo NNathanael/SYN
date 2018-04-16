@@ -4,7 +4,7 @@
 
 #### Restaurants
 
-```json
+```ini
 {
     _id,
     name,
@@ -31,7 +31,7 @@ Route : ***/***
 
 Route : ***orders/:idRestaurant***
 
-``` json
+``` ini
 {
     _id,
     name,
@@ -46,7 +46,7 @@ Route : ***orders/:idRestaurant***
 
 Route : ***android/:idRestaurant***
 
-```json
+```ini
 {
     name,
     tables : [{ _id, name}],
@@ -60,7 +60,7 @@ Route : ***android/:idRestaurant***
 
 #### ORDER
 
-```json
+```ini
 {
     idRestaurant,
     idTable,
@@ -70,7 +70,7 @@ Route : ***android/:idRestaurant***
 
 #### ORDER_CONFIRM
 
-```json
+```ini
 {
     status : boolean,
     error : string
@@ -110,7 +110,7 @@ mongoexport --db restaurant --collection restaurants --out restaurants.json
 mongoimport --db restaurant --collection restaurants --file restaurants.json
 ```
 
-```jso
+```ini
 { _id: 5ad36fea8bccbc1f3a1e3de5,
   name: 'Château de Villa',
   tables:
