@@ -110,7 +110,7 @@ mongoexport --db restaurant --collection restaurants --out restaurants.json
 mongoimport --db restaurant --collection restaurants --file restaurants.json
 ```
 
-```json
+```ini
 { _id: 5ad36fea8bccbc1f3a1e3de5,
   name: 'Château de Villa',
   tables:
