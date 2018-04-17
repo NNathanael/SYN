@@ -8,6 +8,7 @@ module.exports = function(io) {
 
     socket.on('ORDER', function (data) {
       console.log('Order recieved');
+      
       const idRestaurant = data.idRestaurant;
       const idTable = data.idTable;
       const allFoods = data.foods;
